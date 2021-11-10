@@ -24,9 +24,7 @@ Bowling is a python command-line tool that can run in one of the following modes
 * “Audit + Remove Mode” - export and delete the relevant ads.
 There are a few output files (see here) which are saved locally under the “output” folder and optionally on BigQuery as well (“google_3_strikes” dataset).
 
-
-[![diagram][6]][6]
-
+![Diagram of The tool's functionality](./src/AdsReviewerTool.png)
 
 ## Selecting the relevant policies
 
