@@ -1,12 +1,7 @@
 ﻿
-# Bowling - saves advertisers from Google's 3-strike account suspension
+# Bowling - allows advertisers to review their disapproved ads at scale
 
-In light of the [new policy](https://support.google.com/google-ads/answer/10957124?hl=en) that might cause accounts suspension, Bowling is a mitigation tool which allows clients to act and remove disapproved ads before risking account suspension. Advertisers with hundreds of accounts and billions of search keywords lack the bandwidth to monitor each violation, thus might receive repeated strikes and get suspended.
-
-
-### The policy ###
-Starting Oct 21 Google is introducing a new strike-based system to enforce against advertisers who repeatedly violate Google Ads policies (read more about the change here).
-An advertiser’s first policy violation will only result in a warning. But advertisers will earn their first strike if we detect continued violation of our policies. Advertisers will be able to receive a maximum of three strikes, and the penalties applied with each strike will progressively increase. Temporary account holds will be applied for the first and second strikes, while the third strike will result in an account suspension. 
+Advertisers with hundreds of accounts and billions of search keywords lack the bandwidth to monitor each disapproval, thus can benefit from a scaled audting tool to showcase disapproved ads
 
 
 # Project owners 
@@ -33,17 +28,17 @@ There are a few output files (see here) which are saved locally under the “out
 [![diagram][6]][6]
 
 
-## Selecting the relevant topics
+## Selecting the relevant policies
 
 - This [json](https://github.com/google/bowling-compliance-ads-remover/blob/main/src/topics_substrings.json) contains two lists.
 - Make both of the lists empty if you want to audit/remove all policies.
-- Please fill only the first list if you want to cherry pick the relevant topics.
-- Please fill only the seconf list if you want to cherry pick the non-relevant topics.
+- Please fill only the first list if you want to cherry pick the relevant policies.
+- Please fill only the seconf list if you want to cherry pick the non-relevant policies.
 
 
 ```
 Example A:
-inclusion: [drags, weapon] - any ad with a policy topic that contains any of the words"drags" or "weapon" should be removed.
+inclusion: [drugs, weapon] - any ad with a policy topic that contains any of the words "drugs" or "weapons" should be removed.
 exclusion: []
 
 Example B:
